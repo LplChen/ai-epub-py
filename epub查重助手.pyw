@@ -97,7 +97,7 @@ def get_volume_fingerprint(text):
     """阵列化特征提取器：将文件中的全部卷号特征提取为一个元组"""
     if not text: return None
     
-    text = unicodedata.normalize('NFKC', str(text)).lower()
+    text = unicodedata.normalize('NFKC'， str(text)).lower()
     text = re.sub(r'1080p?|720p?|2160p?|4k|h264|h265|x264|x265|mp4|mp3|aac|flac|201\d|202\d|203\d', ' ', text, flags=re.I)
     
     # --- 核心修复：保护类似“道中04”这样的词汇不被误删 ---
@@ -243,7 +243,7 @@ def extract_epub_cover(filepath):
             opf_content = archive.read(rootfile_path)
             opf_tree = ET.fromstring(opf_content)
 
-            cover_href = None
+            cover_href = 无
             manifest = opf_tree.find('.//opf:manifest', NAMESPACES)
             if manifest is not None:
                 for item in manifest.findall('.//opf:item', NAMESPACES):
@@ -278,7 +278,7 @@ def extract_epub_cover(filepath):
 class EpubDupeFinderApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("EPUB 查重助手 v2.5")
+        self.root.title("EPUB 查重助手 v3.4")
         self.root.geometry("1200x850") 
         
         self.folder1_path = tk.StringVar()
