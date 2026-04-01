@@ -26,4 +26,3 @@
 ## epub查重助手.pyw
 对单个或两个文件夹内（包含子文件夹）的epub文件进行扫描比对查重，手动选择删除重复的文件
 - 需安装第三方库`Pillow`和`send2trash`：在终端（PowerShell 或 CMD）输入`pip install Pillow send2trash`并回车安装
-- 双击打开`epub查重助手.pyw`
