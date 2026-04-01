@@ -14,6 +14,7 @@
 
 ## epub转txt.py
 将`epub`转换为`txt`
+-需安装第三方库`bs4`：在终端（PowerShell 或 CMD）输入`pip install beautifulsoup4`并回车安装
 
 <br/>
 
