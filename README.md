@@ -1,6 +1,8 @@
 # 用ai写的批量处理epub脚本
 需要安装`Python`，安装时勾选`Add Python 3.x to PATH`
 
+<br/>
+
 ## epub出版商分类.py
 根据epub元数据中的`“出版商”`名称创建文件夹并移动文件，无出版社数据则归类到`“未知出版商”`
  - 需安装第三方库`ebooklib`和`tqdm`：在终端（PowerShell 或 CMD）输入`pip install ebooklib tqdm`并回车安装
